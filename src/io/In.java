@@ -1,3 +1,5 @@
+package io;
+
 import java.io.*;
 import java.util.LinkedList;
 
@@ -368,7 +370,6 @@ public class In {
      */
     @SuppressWarnings("SameParameterValue")
     public static void open(String fn) {
-        if (!"run".equalsIgnoreCase(System.getenv("ACTION")) && !"debug".equalsIgnoreCase(System.getenv("ACTION"))) return;
         try {
             InputStream s = new BufferedInputStream(new FileInputStream(fn));
             bufferStack.add(buf);

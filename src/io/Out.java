@@ -1,3 +1,5 @@
+package io;
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -145,8 +147,6 @@ public class Out {
     /** Compare the output of the program, line by line the given file **/
     public static void compareTo(String fn) {
         // Don't compare to a file in a non-interactive mode
-        if (!"run".equalsIgnoreCase(System.getenv("ACTION")))
-            return;
 
         if (out_initialized) {
             System.err.println("You have to call compareTo() before any other call to Out");
