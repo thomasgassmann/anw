@@ -4,8 +4,6 @@
     <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/slay_the_dragon/SlayTheDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/slay_the_dragon/SlayTheDragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/slay_the_dragon/public/custom.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/slay_the_dragon/public/custom.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/slay_the_dragon/public/custom.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/slay_the_dragon/public/custom.out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,16 +104,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/slay_the_dragon/SlayTheDragon.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
