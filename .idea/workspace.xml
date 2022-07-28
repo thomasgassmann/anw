@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/buy_low_sell_high/BuyLowSellHigh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/buy_low_sell_high/BuyLowSellHigh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/christmas/Christmas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/christmas/Christmas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/christmas/public/custom.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/christmas/public/custom.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/christmas/public/custom.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/christmas/public/custom.out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BuyLowSellHigh.main">
+  <component name="RunManager" selected="JUnit.Christmas.main">
     <configuration name="ACardGame.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
@@ -109,16 +111,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SlayTheDragon.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Christmas.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="slay_the_dragon.*" />
+          <option name="PATTERN" value="christmas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="slay_the_dragon" />
-      <option name="MAIN_CLASS_NAME" value="slay_the_dragon.SlayTheDragon" />
+      <option name="PACKAGE_NAME" value="christmas" />
+      <option name="MAIN_CLASS_NAME" value="christmas.Christmas" />
       <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -127,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Christmas.main" />
         <item itemvalue="JUnit.BuyLowSellHigh.main" />
         <item itemvalue="JUnit.ChineseWhispers.main" />
         <item itemvalue="JUnit.BicycleAuction.main" />
         <item itemvalue="JUnit.ACardGame.main" />
-        <item itemvalue="JUnit.SlayTheDragon.main" />
       </list>
     </recent_temporary>
   </component>
@@ -161,5 +163,21 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/buy_low_sell_high/BuyLowSellHigh.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/christmas/Christmas.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
