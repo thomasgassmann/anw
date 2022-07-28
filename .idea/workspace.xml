@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a_card_game/ACardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/a_card_game/ACardGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ACardGame.main">
+  <component name="RunManager" selected="JUnit.BicycleAuction.main">
     <configuration name="ACardGame.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
@@ -56,6 +54,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="a_card_game" />
       <option name="MAIN_CLASS_NAME" value="a_card_game.ACardGame" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BicycleAuction.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anw-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bicycle_auction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bicycle_auction" />
+      <option name="MAIN_CLASS_NAME" value="bicycle_auction.BicycleAuction" />
       <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -96,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BicycleAuction.main" />
         <item itemvalue="JUnit.ACardGame.main" />
         <item itemvalue="JUnit.SlayTheDragon.main" />
         <item itemvalue="JUnit.SlayTheDragon" />
