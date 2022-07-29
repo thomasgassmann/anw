@@ -4,8 +4,6 @@ import io.In;
 import io.Out;
 import org.junit.jupiter.api.Test;
 
-import java.util.HashMap;
-
 public class HecticPrinters {
     @Test
     public void main() {
