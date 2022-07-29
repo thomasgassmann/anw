@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frog_feeding/FrogFeeding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frog_feeding/FrogFeeding.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.FrogFeeding.main">
+  <component name="RunManager" selected="JUnit.HecticPrinters.main">
     <configuration name="BuyLowSellHigh.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
@@ -55,22 +54,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="buy_low_sell_high" />
       <option name="MAIN_CLASS_NAME" value="buy_low_sell_high.BuyLowSellHigh" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChineseWhispers.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anw-training" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chinese_whispers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chinese_whispers" />
-      <option name="MAIN_CLASS_NAME" value="chinese_whispers.ChineseWhispers" />
       <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -125,13 +108,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HecticPrinters.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anw-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hectic_printers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hectic_printers" />
+      <option name="MAIN_CLASS_NAME" value="hectic_printers.HecticPrinters" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HecticPrinters.main" />
         <item itemvalue="JUnit.FrogFeeding.main" />
         <item itemvalue="JUnit.Food.main" />
         <item itemvalue="JUnit.Christmas.main" />
         <item itemvalue="JUnit.BuyLowSellHigh.main" />
-        <item itemvalue="JUnit.ChineseWhispers.main" />
       </list>
     </recent_temporary>
   </component>
