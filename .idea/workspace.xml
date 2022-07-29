@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hectic_printers/HecticPrinters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hectic_printers/HecticPrinters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/important_stops/ImportantStops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/important_stops/ImportantStops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/important_stops/public/custom.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/important_stops/public/custom.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/important_stops/public/custom.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/important_stops/public/custom.out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,39 +46,7 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.HecticPrinters.main">
-    <configuration name="BuyLowSellHigh.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anw-training" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="buy_low_sell_high.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="buy_low_sell_high" />
-      <option name="MAIN_CLASS_NAME" value="buy_low_sell_high.BuyLowSellHigh" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Christmas.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anw-training" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="christmas.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="christmas" />
-      <option name="MAIN_CLASS_NAME" value="christmas.Christmas" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ImportantStops.main">
     <configuration name="Food.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
@@ -125,13 +95,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ImportantStops" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anw-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="important_stops.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="important_stops" />
+      <option name="MAIN_CLASS_NAME" value="important_stops.ImportantStops" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImportantStops.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anw-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="important_stops.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="important_stops" />
+      <option name="MAIN_CLASS_NAME" value="important_stops.ImportantStops" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ImportantStops.main" />
+        <item itemvalue="JUnit.ImportantStops" />
         <item itemvalue="JUnit.HecticPrinters.main" />
         <item itemvalue="JUnit.FrogFeeding.main" />
         <item itemvalue="JUnit.Food.main" />
-        <item itemvalue="JUnit.Christmas.main" />
-        <item itemvalue="JUnit.BuyLowSellHigh.main" />
       </list>
     </recent_temporary>
   </component>
@@ -175,12 +177,14 @@
           <line>16</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/hectic_printers/HecticPrinters.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="u" language="JAVA" />
+        <watch expression="low[v]" language="JAVA" />
+        <watch expression="v" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
