@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="" />
+    <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jackpot/Jackpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jackpot/Jackpot.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,23 +44,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Life.main">
-    <configuration name="HecticPrinters.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anw-training" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hectic_printers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hectic_printers" />
-      <option name="MAIN_CLASS_NAME" value="hectic_printers.HecticPrinters" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Jackpot.main">
     <configuration name="ImportantStops" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
@@ -84,6 +71,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="important_stops" />
       <option name="MAIN_CLASS_NAME" value="important_stops.ImportantStops" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Jackpot.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anw-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jackpot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jackpot" />
+      <option name="MAIN_CLASS_NAME" value="jackpot.Jackpot" />
       <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -124,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Jackpot.main" />
         <item itemvalue="JUnit.Life.main" />
         <item itemvalue="JUnit.Life" />
         <item itemvalue="JUnit.ImportantStops.main" />
         <item itemvalue="JUnit.ImportantStops" />
-        <item itemvalue="JUnit.HecticPrinters.main" />
       </list>
     </recent_temporary>
   </component>
