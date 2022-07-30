@@ -29,13 +29,8 @@ public class Jackpot {
             for (int j = 0; j < k; j++) {
                 values[i][j] = In.readInt();
             }
-
-            Arrays.sort(values[i]);
         }
 
-        // dp[][] = probability of increasing sequence of length j
-        // when starting from i
-//        double res = prob(n, k, values, 0, -1);
         double res = jackpot(n, k, values);
         DecimalFormat df = new DecimalFormat("#.######");
         df.setMinimumFractionDigits(1);
@@ -52,7 +47,6 @@ public class Jackpot {
 
         for (int i = n - 2; i >= 0; i--) {
             for (int j = 0; j < k; j++) {
-                dp[i][j] = 0;
                 for (int l = 0; l < k; l++) {
                     if (values[i + 1][l] >= values[i][j]) {
                         dp[i][j] += 1 / (double)k * dp[i + 1][l];
