@@ -1,13 +1,10 @@
 package island;
 
-import algorithms.Algorithms;
 import io.In;
 import io.Out;
 import org.junit.jupiter.api.Test;
 
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
-import java.util.HashMap;
 
 public class Island {
     @Test
@@ -21,84 +18,34 @@ public class Island {
         }
     }
 
-    private static HashMap<Integer, HashMap<Integer, HashMap<Integer, HashMap<Integer, Double>>>> memo = new HashMap<>();
-
-    private static void setmemo(int b, int h, int n, int survive, double prob) {
-        if (!memo.containsKey(b)) {
-            memo.put(b, new HashMap<>());
-        }
-
-        if (!memo.get(b).containsKey(h)) {
-            memo.get(b).put(h, new HashMap<>());
-        }
-
-        if (!memo.get(b).get(h).containsKey(n)) {
-            memo.get(b).get(h).put(n, new HashMap<>());
-        }
-
-        memo.get(b).get(h).get(n).put(survive, prob);
-    }
-
-    private static Double getmemo(int b, int h, int n, int survive) {
-        if (!memo.containsKey(b) || !memo.get(b).containsKey(h) ||
-            !memo.get(b).get(h).containsKey(n) || !memo.get(b).get(h).get(n).containsKey(survive)) {
-            return null;
-        }
-
-        return memo.get(b).get(h).get(n).get(survive);
-    }
-
-    private static double survive(int b, int h, int n, int survive) {
-        if (b == 0 && n == 0) {
-            return survive == 1 ? 1 : 0;
-        }
-
-        if (b == 0 && h == 0) {
-            return survive == 2 ? 1 : 0;
-        }
-
-        if (n == 0 && h == 0) {
-            return survive == 0 ? 1 : 0;
-        }
-
-        Double m = getmemo(b, h, n, survive);
-        if (m != null) {
-            return m;
-        }
-
-        double total = 0;
-        double choose = Algorithms.binom(b + n + h, 2);
-        double bearHunter = b * h / choose;
-        double bearNinja = b * n / choose;
-        double ninjaHunter = n * h / choose;
-        if (b > 0 && h > 0) {
-            total += bearHunter * survive(b - 1, h, n, survive); // bear and hunter, bear dies
-        }
-
-        if (n > 0 && b > 0) {
-            total += bearNinja * survive(b, h, n - 1, survive); // bear and ninja, ninja dies
-        }
-
-        if (h > 0 && n > 0) {
-            total += ninjaHunter * survive(b, h - 1, n, survive); // ninja and hunter, hunter dies
-        }
-
-        total /= (bearNinja + bearHunter + ninjaHunter);
-
-        setmemo(b, h, n, survive, total);
-
-        return total;
-    }
-
-    private static double surviveBetter(int b, int h, int n, int survive) {
-        // dp[i][j][k][l]: probability of l winning if i bears, j hunters, k ninjas remaining
+    private static double[][][] surviveBear(int b, int h, int n) {
+        // dp[i][j][k]: probability of bear winning if i bears, j hunters, k ninjas remaining
         // 0 <= i <= b
         // 0 <= j <= h
         // 0 <= k <= n
-        // 0 <= l <= 2: 0 b, 1 h, 2 n
-        double[][] dp;
+        int size = Math.max(b, Math.max(h, n)) + 1;
+        double[][][] dp = new double[size][size][size];
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                for (int k = 0; k < size; k++) {
+                    if (i == 0 || j == 0 && k == 0) {
+                        dp[i][j][k] = i == 0 ? 0 : 1;
+                        continue;
+                    }
 
-        return 0;
+                    double choose = 1.0 / (i * j + j * k + i * k);
+                    double bearHunter = i * j * choose;
+                    double bearNinja = i * k * choose;
+                    double ninjaHunter = j * k * choose;
+
+                    dp[i][j][k] = bearHunter * dp[i - 1][j][k]
+                            + bearNinja * (k - 1 >= 0 ? dp[i][j][k - 1] : 0)
+                            + ninjaHunter * (j - 1 >= 0 ? dp[i][j - 1][k] : 0);
+                }
+            }
+        }
+
+        return dp;
     }
 
     private static void testCase() {
@@ -106,9 +53,10 @@ public class Island {
         int h = In.readInt();
         int n = In.readInt();
 
-        double bear = survive(b, h, n, 0);
-        double hunter = survive(b, h, n, 1);
-        double ninja = 1 - bear - hunter;
+        double[][][] dp = surviveBear(b, h, n);
+        double bear = dp[b][h][n];
+        double hunter = dp[h][n][b];
+        double ninja = dp[n][b][h];
 
         DecimalFormat df = new DecimalFormat("#.######");
         df.setMinimumFractionDigits(1);
