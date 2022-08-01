@@ -90,6 +90,17 @@ public class Island {
         return total;
     }
 
+    private static double surviveBetter(int b, int h, int n, int survive) {
+        // dp[i][j][k][l]: probability of l winning if i bears, j hunters, k ninjas remaining
+        // 0 <= i <= b
+        // 0 <= j <= h
+        // 0 <= k <= n
+        // 0 <= l <= 2: 0 b, 1 h, 2 n
+        double[][] dp;
+
+        return 0;
+    }
+
     private static void testCase() {
         int b = In.readInt();
         int h = In.readInt();
