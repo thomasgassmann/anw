@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/island/Island.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/island/Island.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +44,17 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Paint.main">
-    <configuration name="Jackpot.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Island.main">
+    <configuration name="Island.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jackpot.*" />
+          <option name="PATTERN" value="island.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="jackpot" />
-      <option name="MAIN_CLASS_NAME" value="jackpot.Jackpot" />
+      <option name="PACKAGE_NAME" value="island" />
+      <option name="MAIN_CLASS_NAME" value="island.Island" />
       <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -126,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Island.main" />
         <item itemvalue="JUnit.Paint.main" />
         <item itemvalue="JUnit.Paint" />
         <item itemvalue="JUnit.MessageTree.main" />
         <item itemvalue="JUnit.MessageTree" />
-        <item itemvalue="JUnit.Jackpot.main" />
       </list>
     </recent_temporary>
   </component>
