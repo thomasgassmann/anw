@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ping_pong/PingPong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ping_pong/PingPong.java" afterDir="false" />
-    </list>
+    <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +41,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.PingPong.main">
+  <component name="RunManager" selected="JUnit.RgbMarbles.main">
     <configuration name="Island.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
@@ -55,22 +52,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="island" />
       <option name="MAIN_CLASS_NAME" value="island.Island" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MessageTree.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anw-training" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="message_tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="message_tree" />
-      <option name="MAIN_CLASS_NAME" value="message_tree.MessageTree" />
       <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -125,13 +106,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RgbMarbles.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anw-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rgb_marbles.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rgb_marbles" />
+      <option name="MAIN_CLASS_NAME" value="rgb_marbles.RgbMarbles" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RgbMarbles.main" />
         <item itemvalue="JUnit.PingPong.main" />
         <item itemvalue="JUnit.Island.main" />
         <item itemvalue="JUnit.Paint.main" />
         <item itemvalue="JUnit.Paint" />
-        <item itemvalue="JUnit.MessageTree.main" />
       </list>
     </recent_temporary>
   </component>
