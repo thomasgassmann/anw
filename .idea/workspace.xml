@@ -44,22 +44,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.SumOfTheDice.main">
-    <configuration name="RandomDivisors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anw-training" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="random_divisors.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="random_divisors" />
-      <option name="MAIN_CLASS_NAME" value="random_divisors.RandomDivisors" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ThreeCoins">
     <configuration name="RandomDivisors.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
@@ -124,13 +109,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThreeCoins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anw-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="three_coins.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="three_coins" />
+      <option name="MAIN_CLASS_NAME" value="three_coins.ThreeCoins" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThreeCoins" />
         <item itemvalue="JUnit.SumOfTheDice.main" />
         <item itemvalue="JUnit.SumOfTheDice" />
         <item itemvalue="JUnit.StopThieves.main" />
         <item itemvalue="JUnit.RandomDivisors.main" />
-        <item itemvalue="JUnit.RandomDivisors" />
       </list>
     </recent_temporary>
   </component>
