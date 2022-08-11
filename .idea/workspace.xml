@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sum_of_the_dice/SumOfTheDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sum_of_the_dice/SumOfTheDice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/three_coins/ThreeCoins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/three_coins/ThreeCoins.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +44,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ThreeCoins">
-    <configuration name="RandomDivisors.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anw-training" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="random_divisors.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="random_divisors" />
-      <option name="MAIN_CLASS_NAME" value="random_divisors.RandomDivisors" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ThreeCoins.main">
     <configuration name="StopThieves.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
@@ -124,13 +108,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThreeCoins.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anw-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="three_coins.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="three_coins" />
+      <option name="MAIN_CLASS_NAME" value="three_coins.ThreeCoins" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThreeCoins.main" />
         <item itemvalue="JUnit.ThreeCoins" />
         <item itemvalue="JUnit.SumOfTheDice.main" />
         <item itemvalue="JUnit.SumOfTheDice" />
         <item itemvalue="JUnit.StopThieves.main" />
-        <item itemvalue="JUnit.RandomDivisors.main" />
       </list>
     </recent_temporary>
   </component>
