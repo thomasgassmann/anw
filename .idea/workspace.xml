@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/two_boxes/TwoBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/two_boxes/TwoBoxes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,27 +40,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/thomas/git/eth/pprog-lecture",
+    "last_opened_file_path": "/home/thomas/git/eth/anw-training",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ThreeCoins.main">
-    <configuration name="StopThieves.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anw-training" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stop_thieves.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="stop_thieves" />
-      <option name="MAIN_CLASS_NAME" value="stop_thieves.StopThieves" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TwoBoxes.main">
     <configuration name="SumOfTheDice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
@@ -123,13 +108,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TwoBoxes.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="anw-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="two_boxes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="two_boxes" />
+      <option name="MAIN_CLASS_NAME" value="two_boxes.TwoBoxes" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TwoBoxes.main" />
         <item itemvalue="JUnit.ThreeCoins.main" />
         <item itemvalue="JUnit.ThreeCoins" />
         <item itemvalue="JUnit.SumOfTheDice.main" />
         <item itemvalue="JUnit.SumOfTheDice" />
-        <item itemvalue="JUnit.StopThieves.main" />
       </list>
     </recent_temporary>
   </component>
