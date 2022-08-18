@@ -25,6 +25,14 @@ public class TwoBoxes {
               + b1 / (double)(r1 + b1) * r2 / (r2 + 1.0 + b2);
     }
 
+    private static double q2(int r1, int b1, int r2, int b2) {
+        // Pr[red ball from A to B | red ball drawn from B] =
+        // Pr[red ball drawn from B and red ball from A to B] / Pr[red ball drawn from B]
+        double denominator = q1(r2, b1, r2, b2);
+        double numerator = r1 / (double)(r1 + b1) * (r2 + 1) / (r2 + 1.0 + b2);
+        return numerator / denominator;
+    }
+
     private static void testCase() {
         int r1 = In.readInt();
         int b1 = In.readInt();
@@ -41,7 +49,7 @@ public class TwoBoxes {
                 Out.println(d.format(q1(r1, b1, r2, b2)));
                 break;
             case 2:
-                Out.println('2');
+                Out.println(d.format(q2(r1, b1, r2, b2)));
                 break;
             case 3:
                 Out.println('3');
