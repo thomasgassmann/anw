@@ -29,9 +29,8 @@ public class TwoBoxes {
     }
 
     private static double q1(int r1, int b1, int r2, int b2) {
-        return
-                r1 / (double)(r1 + b1) * (r2 + 1) / (r2 + 1.0 + b2)
-              + b1 / (double)(r1 + b1) * r2 / (r2 + 1.0 + b2);
+        return r1 / (double)(r1 + b1) * (r2 + 1) / (r2 + 1.0 + b2)
+             + b1 / (double)(r1 + b1) * r2 / (r2 + 1.0 + b2);
     }
 
     private static double q2(int r1, int b1, int r2, int b2) {
@@ -44,7 +43,6 @@ public class TwoBoxes {
     private static double q3(int r1, int b1, int r2, int b2, int n) {
         // Pr[at least one ball from B red | red ball from A to B] =
         // 1 - Pr[all balls from B blue | red ball from A to B]
-        // 1 - Pr[red ball from A to B and all balls from B blue] / Pr[red ball from A to b]
         return 1 - allBlue(b2, r2 + 1, n);
     }
 
