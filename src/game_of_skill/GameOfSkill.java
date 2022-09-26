@@ -4,11 +4,13 @@ import io.In;
 import io.Out;
 import org.junit.jupiter.api.Test;
 
+import java.text.DecimalFormat;
+
 public class GameOfSkill {
     @Test
     public void main() {
-        In.open("src/game_of_skill/public/test1.in");
-        Out.compareTo("src/game_of_skill/public/test1.out");
+        In.open("src/game_of_skill/public/test3.in");
+        Out.compareTo("src/game_of_skill/public/test3.out");
 
         int t = In.readInt();
         for (int i = 0; i < t; i++) {
@@ -73,15 +75,16 @@ public class GameOfSkill {
             p[i] = In.readDouble();
         }
 
+        var df = new DecimalFormat("#.#######");
         switch (q) {
             case 1:
-                Out.println(q1(n, p));
+                Out.println(df.format(q1(n, p)));
                 break;
             case 2:
-                Out.println(q2(n, p));
+                Out.println(df.format(q2(n, p)));
                 break;
             case 3:
-                Out.println(q3(n, p));
+                Out.println(df.format(q3(n, p)));
                 break;
             default:
                 break;
