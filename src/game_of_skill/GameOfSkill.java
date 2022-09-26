@@ -5,6 +5,7 @@ import io.Out;
 import org.junit.jupiter.api.Test;
 
 import java.text.DecimalFormat;
+import java.util.HashMap;
 
 public class GameOfSkill {
     @Test
@@ -41,30 +42,62 @@ public class GameOfSkill {
         return numerator / secondThrow7;
     }
 
+    private static HashMap<Integer, HashMap<Integer, Double>> memo = new HashMap<>();
+
+    private static void memoize(int pos, int currentThrow, double expected) {
+        if (!memo.containsKey(pos)) {
+            memo.put(pos, new HashMap<>());
+        }
+
+        memo.get(pos).put(currentThrow, expected);
+    }
+
+    private static boolean has(int pos, int currentThrow) {
+        return memo.containsKey(pos) && memo.get(pos).containsKey(currentThrow);
+    }
+
+    private static double get(int pos, int currentThrow) {
+        return memo.get(pos).get(currentThrow);
+    }
+
+    private static double q3rec(int n, double[] p, int pos, int currentThrow) {
+        if (has(pos, currentThrow)) {
+            return get(pos, currentThrow);
+        }
+
+        if (pos >= n) {
+            return currentThrow;
+        }
+
+        double expected = 0;
+        for (int i = 0; i < 6; i++) {
+            expected += p[i] * q3rec(n, p, pos + 1 + i, currentThrow + 1);
+        }
+
+        memoize(pos, currentThrow, expected);
+        return expected;
+    }
+
     private static double q3(int n, double[] p) {
-        // expected number of throws to reach n
-        double[] dp = new double[n + 1];
-        dp[0] = 0;
-        for (int i = 1; i <= n; i++) {
-            if (i == n) {
-                for (int j = i - 1; j >= i - 6 && j >= 0; j--) {
-                    int minThrow = i - j;
-                    double totalReach = 0;
-                    for (int k = minThrow; k <= 6; k++) {
-                        dp[i] += (1 + dp[j]) * p[k - 1];
+        // dp[i][j]: probability of ending up at position j after i turns
+        double[][] dp = new double[n + 1][n + 6];
+        dp[0][0] = 1;
+        for (int i = 1; i < dp.length; i++) {
+            for (int j = 1; j < n + 6; j++) {
+                for (int k = 0; k < 6; k++) {
+                    if (j - (k + 1) >= 0) {
+                        dp[i][j] += dp[i - 1][j - (k + 1)] * p[k];
                     }
                 }
-
-                continue;
-            }
-
-            for (int j = i - 1; j >= i - 6 && j >= 0; j--) {
-                int throwValue = i - j;
-                dp[i] += (1 + dp[j]) * p[throwValue - 1];
             }
         }
 
-        return dp[n];
+        double expected = 0;
+        for (int i = 1; i < dp.length; i++) {
+            expected += i * (dp[i][n] + dp[i][n + 1] + dp[i][n + 2] + dp[i][n + 3] + dp[i][n + 4] + dp[i][n + 5]);
+        }
+
+        return expected;
     }
 
     public static void testCase() {
@@ -75,6 +108,7 @@ public class GameOfSkill {
             p[i] = In.readDouble();
         }
 
+        memo = new HashMap<>();
         var df = new DecimalFormat("#.#######");
         switch (q) {
             case 1:
@@ -84,7 +118,7 @@ public class GameOfSkill {
                 Out.println(df.format(q2(n, p)));
                 break;
             case 3:
-                Out.println(df.format(q3(n, p)));
+                Out.println(df.format(q3rec(n, p, 0, 0)));
                 break;
             default:
                 break;
