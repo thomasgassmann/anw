@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="401bb331-0682-4246-b5ce-2101a1beef81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_of_skill/GameOfSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_of_skill/GameOfSkill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hourglass/Hourglass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hourglass/Hourglass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,36 +41,37 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/thomas/git/eth/pprog-lecture",
+    "last_opened_file_path": "/home/thomas/git/eth/anw-training",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TopplingDominoes.main">
-    <configuration name="ThreeCoins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GameOfSkill.main">
+    <configuration name="GameOfSkill.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="three_coins.*" />
+          <option name="PATTERN" value="game_of_skill.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="three_coins" />
-      <option name="MAIN_CLASS_NAME" value="three_coins.ThreeCoins" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="game_of_skill" />
+      <option name="MAIN_CLASS_NAME" value="game_of_skill.GameOfSkill" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreeCoins.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Hourglass.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anw-training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="three_coins.*" />
+          <option name="PATTERN" value="hourglass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="three_coins" />
-      <option name="MAIN_CLASS_NAME" value="three_coins.ThreeCoins" />
+      <option name="PACKAGE_NAME" value="hourglass" />
+      <option name="MAIN_CLASS_NAME" value="hourglass.Hourglass" />
       <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -125,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameOfSkill.main" />
+        <item itemvalue="JUnit.Hourglass.main" />
         <item itemvalue="JUnit.TopplingDominoes.main" />
         <item itemvalue="JUnit.TwoBoxes" />
         <item itemvalue="JUnit.TwoBoxes.main" />
-        <item itemvalue="JUnit.ThreeCoins.main" />
-        <item itemvalue="JUnit.ThreeCoins" />
       </list>
     </recent_temporary>
   </component>
