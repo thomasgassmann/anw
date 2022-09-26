@@ -11,8 +11,8 @@ import java.util.LinkedList;
 public class Hourglass {
     @Test
     public void main() {
-        In.open("src/hourglass/public/test1.in");
-        Out.compareTo("src/hourglass/public/test1.out");
+        In.open("src/hourglass/public/test3.in");
+        Out.compareTo("src/hourglass/public/test3.out");
 
         int t = In.readInt();
         for (int i = 0; i < t; i++) {
@@ -47,17 +47,18 @@ public class Hourglass {
             graphEdges[i] = new LinkedList<Integer>();
         }
 
-
         var graph = new Graph(n + 2);
         int SOURCE = n;
         int SINK = n + 1;
-
         int[] s = new int[n];
         for (int i = 0; i < n; i++) {
             s[i] = In.readInt();
         }
 
-        var weights = new HashMap<Integer, HashMap<Integer, Integer>>();
+        var capacity = new HashMap<Integer, HashMap<Integer, Integer>>();
+        for (int i = 0; i < n; i++) {
+            capacity.put(i, new HashMap<>());
+        }
 
         for (int i = 0; i < m; i++) {
             int u = In.readInt();
@@ -65,20 +66,8 @@ public class Hourglass {
             int w = In.readInt();
             graphEdges[u].add(v);
             graphEdges[v].add(u);
-
-            if (!weights.containsKey(u)) {
-                weights.put(u, new HashMap<Integer, Integer>());
-            }
-
-            if (!weights.containsKey(v)) {
-                weights.put(v, new HashMap<Integer, Integer>());
-            }
-
-            weights.get(u).put(v, w);
-            weights.get(v).put(u, w);
-
-            graph.addEdge(u, v, w);
-            graph.addEdge(v, u, w);
+            capacity.get(u).put(v, w);
+            capacity.get(v).put(u, w);
         }
 
         boolean[] c = new boolean[n];
@@ -97,6 +86,13 @@ public class Hourglass {
             } else {
                 graph.addEdge(SOURCE, i, s[i]);
                 totalSandHigh += s[i];
+
+                for (int neighbor : graphEdges[i]) {
+                    if (!c[neighbor]) {
+                        int currentCapacity = capacity.get(i).get(neighbor);
+                        graph.addEdge(i, neighbor, currentCapacity);
+                    }
+                }
             }
         }
 
