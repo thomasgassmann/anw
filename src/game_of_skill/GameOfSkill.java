@@ -42,42 +42,6 @@ public class GameOfSkill {
         return numerator / secondThrow7;
     }
 
-    private static HashMap<Integer, HashMap<Integer, Double>> memo = new HashMap<>();
-
-    private static void memoize(int pos, int currentThrow, double expected) {
-        if (!memo.containsKey(pos)) {
-            memo.put(pos, new HashMap<>());
-        }
-
-        memo.get(pos).put(currentThrow, expected);
-    }
-
-    private static boolean has(int pos, int currentThrow) {
-        return memo.containsKey(pos) && memo.get(pos).containsKey(currentThrow);
-    }
-
-    private static double get(int pos, int currentThrow) {
-        return memo.get(pos).get(currentThrow);
-    }
-
-    private static double q3rec(int n, double[] p, int pos, int currentThrow) {
-        if (has(pos, currentThrow)) {
-            return get(pos, currentThrow);
-        }
-
-        if (pos >= n) {
-            return currentThrow;
-        }
-
-        double expected = 0;
-        for (int i = 0; i < 6; i++) {
-            expected += p[i] * q3rec(n, p, pos + 1 + i, currentThrow + 1);
-        }
-
-        memoize(pos, currentThrow, expected);
-        return expected;
-    }
-
     private static double q3(int n, double[] p) {
         // dp[i][j]: probability of ending up at position j after i turns
         double[][] dp = new double[n + 1][n + 6];
@@ -85,7 +49,7 @@ public class GameOfSkill {
         for (int i = 1; i < dp.length; i++) {
             for (int j = 1; j < n + 6; j++) {
                 for (int k = 0; k < 6; k++) {
-                    if (j - (k + 1) >= 0) {
+                    if (j - (k + 1) >= 0 && j - (k + 1) < n) {
                         dp[i][j] += dp[i - 1][j - (k + 1)] * p[k];
                     }
                 }
@@ -94,7 +58,9 @@ public class GameOfSkill {
 
         double expected = 0;
         for (int i = 1; i < dp.length; i++) {
-            expected += i * (dp[i][n] + dp[i][n + 1] + dp[i][n + 2] + dp[i][n + 3] + dp[i][n + 4] + dp[i][n + 5]);
+            for (int k = 0; k < 6; k++) {
+                expected += i * dp[i][n + k];
+            }
         }
 
         return expected;
@@ -118,7 +84,7 @@ public class GameOfSkill {
                 Out.println(df.format(q2(n, p)));
                 break;
             case 3:
-                Out.println(df.format(q3rec(n, p, 0, 0)));
+                Out.println(df.format(q3(n, p)));
                 break;
             default:
                 break;
